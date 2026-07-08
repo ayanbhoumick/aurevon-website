@@ -42,7 +42,7 @@ export default function AboutSection() {
               your ears should sound exactly as the artist intended it.
             </p>
             <p>
-              Every amplifier we make is assembled by hand in Greater Noida.
+              Every amplifier we make is assembled by hand in Greater Noida, India.
               Every component, from the Burr-Brown pre-amplification stage to
               the toroidal transformer, is chosen not for cost, but for
               character.

@@ -53,9 +53,7 @@ export default function ContactPage() {
                 Location
               </h3>
               <address className="not-italic text-muted text-sm leading-relaxed">
-                Greater Noida, Uttar Pradesh
-                <br />
-                India
+                Greater Noida, India
               </address>
             </div>
 

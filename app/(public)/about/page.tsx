@@ -45,7 +45,7 @@ export default function AboutPage() {
             <div className="flex flex-col gap-2">
               <div className="w-8 h-px bg-gold" />
               <h2 className="text-text text-2xl font-light tracking-tight">
-                Built in Greater Noida
+                Built in Greater Noida, India
               </h2>
             </div>
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Every amplifier we build is assembled by hand in our workshop in
-                Greater Noida. We select each component, the Burr-Brown ICs, the
+                Greater Noida, India. We select each component, the Burr-Brown ICs, the
                 toroidal transformers, the precision capacitors, for what it
                 contributes to sound, not for what it saves on cost.
               </p>
@@ -119,7 +119,7 @@ export default function AboutPage() {
                 text: "Burr-Brown ICs, toroidal transformers, and precision passives.",
               },
               {
-                label: "Greater Noida",
+                label: "Greater Noida, India",
                 text: "Designed, built, and tested in India. Shipped across the country.",
               },
             ].map(({ label, text }) => (

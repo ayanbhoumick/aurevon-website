@@ -16,7 +16,7 @@ export function organizationSchema() {
     name: "Aurevon",
     url: BASE_URL,
     description:
-      "Handmade amplifiers from Greater Noida. Built to honour music in its truest form.",
+      "Handmade amplifiers from Greater Noida, India. Built to honour music in its truest form.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Greater Noida",

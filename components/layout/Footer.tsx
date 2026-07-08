@@ -18,7 +18,7 @@ export default function Footer() {
               Aurevon
             </span>
             <p className="text-muted text-xs leading-relaxed">
-              Handmade amplifiers from Greater Noida.
+              Handmade amplifiers from Greater Noida, India.
               <br />
               Built to honour music in its truest form.
             </p>

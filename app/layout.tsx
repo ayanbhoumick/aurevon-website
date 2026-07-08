@@ -13,10 +13,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     template: "%s | Aurevon",
-    default: "Aurevon: Handmade Amplifiers from Greater Noida",
+    default: "Aurevon: Handmade Amplifiers from Greater Noida, India",
   },
   description:
-    "Handmade amplifiers from Greater Noida. Built to honour music in its truest form.",
+    "Handmade amplifiers from Greater Noida, India. Built to honour music in its truest form.",
   metadataBase: new URL("https://aurevonlabs.com"),
   openGraph: {
     type: "website",
