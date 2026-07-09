@@ -37,8 +37,8 @@ export default function BrandStatement() {
               className="text-text font-light"
               style={LINE_STYLE}
             >
-              Every amplifier is{" "}
-              <span className="text-gold">built by hand</span>
+              Every amplifier{" "}
+              <span className="text-gold">hand built</span>
             </motion.p>
           </div>
 
@@ -51,7 +51,7 @@ export default function BrandStatement() {
               className="text-text font-light"
               style={LINE_STYLE}
             >
-              Every component is{" "}
+              Every component{" "}
               <span className="text-gold">chosen with intent</span>
             </motion.p>
           </div>

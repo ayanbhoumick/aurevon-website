@@ -19,7 +19,7 @@ export const products: Product[] = [
     id: "harmion-dmd65",
     name: "HARMION",
     slug: "harmion",
-    tagline: "Pure Musical Performance. Engineered for Clarity.",
+    tagline: "Best paired with bookshelf speakers in your bedroom, study or listening room",
     description:
       "A high-performance 2.1 channel integrated amplifier designed for immersive, musical sound reproduction. Built with precision components and a dual-mono architecture, HARMION delivers exceptional clarity, depth, and control.",
     price: null,
@@ -50,7 +50,7 @@ export const products: Product[] = [
     id: "dynavion-sd150",
     name: "DYNAVION",
     slug: "dynavion",
-    tagline: "Modern Connectivity. Pure Musical Power.",
+    tagline: "Best paired with high power tower speakers for a larger listening area",
     description:
       "A versatile high-performance 2.0 channel amplifier designed for modern listening. Powerful Class D amplification combined with built-in Bluetooth 5.3, USB playback, and AUX input.",
     price: null,
@@ -85,7 +85,7 @@ export const products: Product[] = [
     id: "fidelion-sd250",
     name: "FIDELION",
     slug: "fidelion",
-    tagline: "Pure Power. Precision Sound.",
+    tagline: "Best paired with 3-way tower speakers for a larger listening area",
     description:
       "A high-output 2.1 channel audiophile amplifier engineered for powerful, clean, and dynamic sound reproduction. Advanced Class D amplification with premium Burr-Brown pre-amplification — built for no-compromise listening.",
     price: null,
