@@ -33,12 +33,12 @@ export default function Navbar() {
         style={{
           background: scrolled ? "rgba(10,10,10,0.85)" : "transparent",
           backdropFilter: scrolled ? "blur(16px)" : "none",
-          borderBottom: scrolled ? "1px solid rgba(255,255,255,0.06)" : "none",
+          borderBottom: "1px solid rgba(201,169,103,0.18)",
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
+        <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between relative">
+          {/* Logo + wordmark */}
+          <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
               src="/logo/final_logo_1.jpg"
               alt="Aurevon"
@@ -47,10 +47,16 @@ export default function Navbar() {
               className="h-7 w-auto object-contain"
               preload
             />
+            <span
+              className="text-white/80 font-light hidden sm:block"
+              style={{ fontSize: "13px", letterSpacing: "0.28em", textTransform: "uppercase" }}
+            >
+              Aurevon
+            </span>
           </Link>
 
-          {/* Desktop links */}
-          <ul className="hidden md:flex items-center gap-8">
+          {/* Desktop links — absolutely centered */}
+          <ul className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {links.map(({ href, label }, i) => {
               const active = pathname === href || pathname.startsWith(href + "/");
               return (
@@ -62,11 +68,14 @@ export default function Navbar() {
                   >
                     <Link
                       href={href}
-                      className={`text-xs tracking-widest uppercase transition-colors duration-200 ${
+                      className={`relative text-xs tracking-widest uppercase transition-colors duration-200 pb-1 ${
                         active ? "text-gold" : "text-white/60 hover:text-white"
                       }`}
                     >
                       {label}
+                      {active && (
+                        <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-[3px] h-[3px] rounded-full bg-gold" />
+                      )}
                     </Link>
                   </motion.div>
                 </li>

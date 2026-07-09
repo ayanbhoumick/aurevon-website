@@ -14,14 +14,14 @@ export default function ProductCard({ product }: Props) {
   return (
     <Link
       href={`/shop/${product.slug}`}
-      className="group flex flex-col h-full bg-surface border border-border rounded-sm overflow-hidden hover:border-border-subtle transition-colors duration-300"
+      className="group flex flex-col h-full bg-surface border border-border rounded-sm overflow-hidden hover:border-border-subtle transition-colors duration-300 cursor-pointer"
     >
       {/* Image */}
       <div className="aspect-[4/3] relative overflow-hidden bg-raised">
         {hasImage ? (
           <Image
             src={product.images[0]}
-            alt={product.name}
+            alt={`${product.name} amplifier`}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-700"

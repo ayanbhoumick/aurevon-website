@@ -25,13 +25,13 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <nav>
+          <nav aria-label="Footer">
             <ul className="flex flex-wrap gap-x-8 gap-y-2">
               {navLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-muted text-xs hover:text-gold transition-colors duration-200"
+                    className="text-muted text-xs hover:text-gold transition-colors duration-200 py-1 inline-block"
                   >
                     {label}
                   </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
               href="https://www.instagram.com/aurevonlabs/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted text-xs hover:text-gold transition-colors duration-200 flex items-center gap-1.5"
+              className="text-muted text-xs hover:text-gold transition-colors duration-200 flex items-center gap-1.5 py-1"
             >
               <svg
                 width="12"

@@ -10,7 +10,7 @@ const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 export default function FeaturedProductsSection() {
   return (
-    <section className="py-24">
+    <section className="py-32">
       <div className="max-w-7xl mx-auto px-6 flex flex-col gap-10">
         {/* Heading */}
         <motion.div

@@ -50,7 +50,7 @@ export default function UpcomingPage() {
 
                 <div className="flex flex-col gap-2">
                   <div className="flex items-start justify-between">
-                    <h3 className="text-text text-sm font-medium tracking-widest uppercase">
+                    <h3 className="text-text text-sm font-medium" style={{ fontFamily: "'Spaceman', sans-serif", fontWeight: 400 }}>
                       {product.name}
                     </h3>
                     <span className="text-muted text-xs">
@@ -67,8 +67,9 @@ export default function UpcomingPage() {
                 </span>
 
                 <Link
-                  href="/contact"
+                  href={`/contact?re=${encodeURIComponent(product.name)}`}
                   className="text-muted text-xs hover:text-gold transition-colors duration-200"
+                  aria-label={`Notify me when ${product.name} is available`}
                 >
                   Notify me when available →
                 </Link>

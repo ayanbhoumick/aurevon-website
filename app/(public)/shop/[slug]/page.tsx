@@ -48,7 +48,7 @@ export default async function ProductDetailPage({ params }: Props) {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-16">
+    <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col gap-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(ldJson) }}
@@ -110,9 +110,9 @@ export default async function ProductDetailPage({ params }: Props) {
           <AddToCartButton price={product.price} stock={product.stock} />
 
           <div className="text-muted text-xs leading-relaxed pt-2 flex flex-col gap-1">
-            <span>🇮🇳 Handmade in Greater Noida, India</span>
-            <span>📦 Ships within 7–10 business days of order confirmation</span>
-            <span>💬 Questions? Chat on WhatsApp</span>
+            <span><span aria-hidden="true">🇮🇳</span> Handmade in Greater Noida, India</span>
+            <span><span aria-hidden="true">📦</span> Ships within 7–10 business days of order confirmation</span>
+            <span><span aria-hidden="true">💬</span> Questions? Chat on WhatsApp</span>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@ export default async function ProductDetailPage({ params }: Props) {
         <section className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <div className="w-8 h-px bg-gold" />
-            <h2 className="text-text text-xl font-light tracking-tight">
+            <h2 className="text-text text-2xl font-light tracking-tight">
               Also from Aurevon
             </h2>
           </div>

@@ -39,7 +39,7 @@ export default function ContactForm() {
     const safeMessage = form.message.replace(/[\r\n]/g, " ");
     const subject = encodeURIComponent(`Enquiry from ${safeName} via Aurevon`);
     const body = encodeURIComponent(safeMessage);
-    window.location.href = `mailto:aurevonlabs@gmail.com?subject=${subject}&body=${body}`;
+    window.open(`mailto:aurevonlabs@gmail.com?subject=${subject}&body=${body}`, "_blank");
     setState("sent");
   };
 

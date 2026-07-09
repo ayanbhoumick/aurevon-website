@@ -23,7 +23,7 @@ export default function ContactPage() {
           </div>
 
           {/* Info */}
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-8">
             {/* WhatsApp */}
             <div className="flex flex-col gap-3">
               <div className="w-8 h-px bg-gold" />

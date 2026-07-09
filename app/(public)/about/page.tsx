@@ -19,11 +19,11 @@ export default function AboutPage() {
           fill
           sizes="100vw"
           className="object-cover"
-          preload
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30" />
         <div className="absolute inset-0 flex items-end px-6 pb-10 max-w-7xl mx-auto">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 max-w-xl">
             <span className="text-gold text-xs uppercase tracking-[0.2em]">
               About
             </span>
@@ -38,7 +38,7 @@ export default function AboutPage() {
       </section>
 
       {/* Origin story */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20">
           {/* Text */}
           <div className="flex flex-col gap-8">
@@ -49,7 +49,7 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="flex flex-col gap-4 text-muted text-sm leading-relaxed">
+            <div className="flex flex-col gap-4 text-muted text-sm leading-relaxed max-w-prose">
               <p>
                 Aurevon was founded with a single belief: that music deserves
                 to be heard exactly as the artist intended it. Not compressed,
@@ -108,7 +108,7 @@ export default function AboutPage() {
       {/* Philosophy strip */}
       <section className="border-t border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 label: "Handmade",

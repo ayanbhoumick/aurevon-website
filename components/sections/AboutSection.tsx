@@ -8,7 +8,7 @@ const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 export default function AboutSection() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-32 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Text — slides from left */}
         <motion.div

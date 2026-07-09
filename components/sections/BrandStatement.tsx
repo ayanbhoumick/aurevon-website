@@ -30,7 +30,7 @@ export default function BrandStatement() {
 
           {/* Line 1 */}
           <div className="overflow-hidden">
-            <motion.p
+            <motion.h2
               initial={{ y: "100%" }}
               animate={inView ? { y: 0 } : { y: "100%" }}
               transition={{ duration: 0.85, delay: 0.05, ease: EASE }}
@@ -39,7 +39,7 @@ export default function BrandStatement() {
             >
               Every amplifier{" "}
               <span className="text-gold">hand built</span>
-            </motion.p>
+            </motion.h2>
           </div>
 
           {/* Line 2 */}

@@ -41,7 +41,7 @@ export default function EarlyAccessSection() {
   }
 
   return (
-    <section className="py-24 px-6">
+    <section className="py-32 px-6">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}

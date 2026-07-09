@@ -28,7 +28,7 @@ export default function HeroSection() {
         style={{ opacity: contentOpacity, pointerEvents: contentPointerEvents }}
         className="absolute inset-0 z-10 flex items-center justify-center"
       >
-          <div className="flex flex-col items-center gap-5 max-w-2xl text-center px-4 -mt-[4.5rem]">
+          <div className="flex flex-col items-center gap-5 max-w-2xl text-center px-4 -mt-12 md:-mt-[4.5rem]">
             {/* Main headline — split reveal */}
             <h1
               className="font-thin"
@@ -110,6 +110,7 @@ export default function HeroSection() {
 
       {/* Scroll indicator */}
       <motion.div
+        aria-hidden="true"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.6 }}
