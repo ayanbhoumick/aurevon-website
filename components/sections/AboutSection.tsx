@@ -38,16 +38,20 @@ export default function AboutSection() {
 
           <div className="flex flex-col gap-4 text-muted text-sm leading-relaxed max-w-md">
             <p>
-              Aurevon was born from a single conviction: that the music reaching
-              your ears should sound exactly as the artist intended it.
+              Aurevon was born with the conviction that music should be heard
+              the way the artist intended it to be heard, with no added colour.
             </p>
             <p>
-              Every amplifier we make is assembled by hand in Greater Noida, India.
-              Every component, from the Burr-Brown pre-amplification stage to
-              the toroidal transformer, is chosen not for cost, but for
-              character.
+              Each amplifier is hand made in our workshop in Greater Noida,
+              India. Every component is carefully chosen for a purpose, be it
+              the toroidal transformer, the extra large rectifier filters, the
+              Burr Brown stage or the relay based speaker protection, not for
+              cost, but for character.
             </p>
-            <p>We build for people who can tell the difference.</p>
+            <p>
+              Production is meticulously slow. We build for listeners who can
+              tell the difference.
+            </p>
           </div>
 
           <Link
