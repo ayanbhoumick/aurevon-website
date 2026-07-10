@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,6 +12,14 @@ export default function ProductGallery({ images, productName }: Props) {
   const validImages = images.filter((src) => !src.includes("placeholder"));
   const [active, setActive] = useState(0);
   const [lightbox, setLightbox] = useState(false);
+
+  useEffect(() => {
+    if (validImages.length <= 1 || lightbox) return;
+    const id = setInterval(() => {
+      setActive((i) => (i + 1) % validImages.length);
+    }, 10000);
+    return () => clearInterval(id);
+  }, [validImages.length, lightbox]);
 
   if (validImages.length === 0) {
     return (

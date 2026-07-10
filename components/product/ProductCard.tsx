@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/data/products";
@@ -11,16 +8,8 @@ type Props = {
 };
 
 export default function ProductCard({ product }: Props) {
-  const images = product.images.filter((src) => !src.includes("placeholder"));
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    if (images.length <= 1) return;
-    const id = setInterval(() => {
-      setIndex((i) => (i + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(id);
-  }, [images.length]);
+  const hasImage =
+    product.images[0] && !product.images[0].includes("placeholder");
 
   return (
     <Link
@@ -29,19 +18,14 @@ export default function ProductCard({ product }: Props) {
     >
       {/* Image */}
       <div className="aspect-[4/3] relative overflow-hidden bg-raised">
-        {images.length > 0 ? (
-          images.map((src, i) => (
-            <Image
-              key={src}
-              src={src}
-              alt={`${product.name} amplifier`}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className={`object-cover transition-opacity duration-700 ${
-                i === index ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          ))
+        {hasImage ? (
+          <Image
+            src={product.images[0]}
+            alt={`${product.name} amplifier`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover"
+          />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-border-subtle text-xs uppercase tracking-widest">

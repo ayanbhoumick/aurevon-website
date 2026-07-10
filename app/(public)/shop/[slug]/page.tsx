@@ -109,10 +109,19 @@ export default async function ProductDetailPage({ params }: Props) {
 
           <AddToCartButton price={product.price} stock={product.stock} />
 
-          <div className="text-muted text-xs leading-relaxed pt-2 flex flex-col gap-1">
-            <span><span aria-hidden="true">🇮🇳</span> Handmade in Greater Noida, India</span>
-            <span><span aria-hidden="true">📦</span> Ships within 7–10 business days of order confirmation</span>
-            <span><span aria-hidden="true">💬</span> Questions? Chat on WhatsApp</span>
+          <div className="text-muted text-xs leading-relaxed pt-2 flex flex-col gap-1.5">
+            <span className="flex items-center gap-2">
+              <BulletIcon />
+              Handmade in Greater Noida, India
+            </span>
+            <span className="flex items-center gap-2">
+              <BulletIcon />
+              Ships within 7–10 business days of order confirmation
+            </span>
+            <span className="flex items-center gap-2">
+              <BulletIcon />
+              Questions? Chat on WhatsApp
+            </span>
           </div>
         </div>
       </div>
@@ -137,5 +146,23 @@ export default async function ProductDetailPage({ params }: Props) {
         </section>
       )}
     </div>
+  );
+}
+
+function BulletIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-3.5 h-3.5 shrink-0 text-gold"
+      aria-hidden="true"
+    >
+      <path d="M22 2 11 13" />
+      <path d="M22 2 15 22 11 13 2 9z" />
+    </svg>
   );
 }
