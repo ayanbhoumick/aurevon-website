@@ -27,11 +27,9 @@ export const products: Product[] = [
     color: "White / Silver",
     images: [
       "/images/products/harmion/20260524-ABH_7232.jpg",
-      "/images/products/harmion/20260416-ABH_6863-Edit.jpg",
-      "/images/products/harmion/20260416-ABH_6866-Edit.jpg",
+      "/images/products/harmion/20260606-ABH_7257.jpg",
+      "/images/products/harmion/BurrBrown-1.jpg",
       "/images/products/harmion/20260416-ABH_6877-Edit.jpg",
-      "/images/products/harmion/20260416-ABH_6879-Edit.jpg",
-      "/images/products/harmion/20260416-ABH_6880-Edit.jpg",
     ],
     specs: {
       Model: "DMD65",
@@ -58,13 +56,8 @@ export const products: Product[] = [
     color: "Red",
     images: [
       "/images/products/dynavion/20260524-ABH_7233.jpg",
-      "/images/products/dynavion/20260524-ABH_7239-Edit.jpg",
-      "/images/products/dynavion/20260524-ABH_7244-Edit.jpg",
-      "/images/products/dynavion/20260418-ABH_6904.jpg",
+      "/images/products/dynavion/20260524-ABH_7236.jpg",
       "/images/products/dynavion/20260418-ABH_6905.jpg",
-      "/images/products/dynavion/20260418-ABH_6907.jpg",
-      "/images/products/dynavion/20260418-ABH_6910.jpg",
-      "/images/products/dynavion/20260507-ABH_7213.jpg",
       "/images/products/dynavion/20260507-ABH_7228.jpg",
     ],
     specs: {
@@ -82,6 +75,30 @@ export const products: Product[] = [
     isUpcoming: false,
   },
   {
+    id: "harmion2-tbd",
+    name: "HARMION 2",
+    slug: "harmion-2",
+    tagline: "The Harmion with no physical buttons",
+    description: "",
+    price: null,
+    stock: 10,
+    color: "Black",
+    images: [
+      "/images/products/harmion-2/Harmon2-2.jpg",
+      "/images/products/harmion-2/HArmon2-1.jpg",
+      "/images/products/harmion-2/TPA3118-1.jpg",
+      "/images/products/harmion-2/Codaca2113.jpg",
+    ],
+    specs: {
+      Model: "TBD",
+      Configuration: "Dual Mono",
+      "Output Power": "100W + 100W",
+      Control: "Touchscreen (no physical buttons)",
+      Connectivity: "Bluetooth, Wi-Fi, Spotify Connect",
+    },
+    isUpcoming: false,
+  },
+  {
     id: "fidelion-sd250",
     name: "FIDELION",
     slug: "fidelion",
@@ -91,7 +108,12 @@ export const products: Product[] = [
     price: null,
     stock: 10,
     color: "TBD",
-    images: ["/images/products/fidelion/placeholder.jpg"],
+    images: [
+      "/images/products/fidelion/Fidelion2.jpg",
+      "/images/products/fidelion/Fidelion.jpg",
+      "/images/products/fidelion/Caps.jpg",
+      "/images/products/fidelion/6880-Edit.jpg",
+    ],
     specs: {
       Model: "SD250",
       Configuration: "2.1 Channel",

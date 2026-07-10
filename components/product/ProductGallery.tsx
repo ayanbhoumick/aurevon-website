@@ -45,7 +45,7 @@ export default function ProductGallery({ images, productName }: Props) {
               alt={`${productName} , view ${active + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover group-hover:scale-105 transition-transform duration-700"
+              className="object-cover"
             />
           </motion.div>
         </AnimatePresence>
